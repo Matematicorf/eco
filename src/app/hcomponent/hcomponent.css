@@ -1,37 +1,74 @@
-/* Estilo para o container da busca */
-.search-container {
+.menu-botoes {
   display: flex;
-  flex: 0 1 400px; /* Isso faz com que ela cresça, mas não passe de 400px */
-  margin: 0 20px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.search-input {
-  width: 100%;
-  padding: 8px 15px;
-  border: 1px solid #ddd;
-  border-radius: 20px 0 0 20px; /* Arredonda o canto esquerdo */
-  outline: none;
-}
-
-.search-button {
-  padding: 8px 15px;
-  background-color: #007bff;
+.menu-botoes button {
+  background: #003cff;
   color: white;
   border: none;
-  border-radius: 0 20px 20px 0; /* Arredonda o canto direito */
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.search-button:hover {
-  background-color: #0056b3;
+.menu-botoes button:hover {
+  background: #002cb3;
 }
-
-/* Ajuste no .header para garantir o alinhamento */
-.header {
-  padding: 20px 50px;
+.login-container {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  background-color: white;
+  background-color: #d1e9ff; /* Azul claro do fundo */
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+h2 {
+  color: #003cff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.btn-entrar {
+  width: 100%;
+  background-color: #002cb3;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
 }

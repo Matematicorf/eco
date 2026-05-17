@@ -8,6 +8,6 @@ import { RouterModule } from '@angular/router'; // 1. Adicione este import
   imports: [HeaderComponent, RouterModule], // 2. Adicione o RouterModule aqui
   template: `
     <app-header></app-header>
-    <router-outlet></router-outlet> `
+    <router-outlet> </router-outlet> `
 })
 export class App {}
